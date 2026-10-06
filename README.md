@@ -1,7 +1,5 @@
 # Hi, I'm Neon 👋
-
-### 14 y/o developer from Kazakhstan 🇰🇿
-
+###I’m 14 years old and I’m learning programming I’m from Kazakhstan 🇰🇿.
 I'm learning programming, building projects and exploring different technologies.
 
 ---
