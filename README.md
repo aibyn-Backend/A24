@@ -1,9 +1,7 @@
 # Hi, I'm Neon 👋
 ### I’m 14 years old and I’m learning programming I’m from Kazakhstan 🇰🇿.
-I'm learning programming, building projects and exploring different technologies.
-
+I'm studying backend development, but also a bit of frontend out of interest.
 ---
-
 ## 🚀 About Me
 
 - 🐍 Currently learning **Python**
