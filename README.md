@@ -31,5 +31,5 @@ I'm learning programming, building projects and exploring different technologies
 ```text
 Python       ███████████████░░░░░
 C#           ████████░░░░░░░░░░░░
-C++          ██████░░░░░░░░░░░░░░
-HTML / CSS   ████████░░░░░░░░░░░░
+C++          █░░░░░░░░░░░░░░░░░░░
+HTML / CSS   ███░░░░░░░░░░░░░░░░░
