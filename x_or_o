@@ -1,0 +1,43 @@
+import customtkinter as ctk
+
+win = ctk.CTk()
+win.title("крестики нолики")
+win.geometry("250x250")
+
+btn = (
+    (" ",0,2),(" ",0,3),(" ",0,4),
+    (" ",1,2),(" ",1,3),(" ",1,4),
+    (" ",2,2),(" ",2,3),(" ",2,4)
+)
+move = "X"
+
+def click(button):
+    global move
+
+    if button.cget("text") != " ":
+        return
+
+    button.configure(text=move)
+
+    if move == "X":
+        move = "O"
+    else:
+        move = "X"
+
+frame = ctk.CTkFrame(win,width=220,height=220)
+frame.place(relx=0.5,rely=0.5,anchor="center")
+
+for i in range(2,5):
+    frame.grid_columnconfigure(i,weight=1,uniform="col")
+
+for i in range(3):
+    frame.grid_rowconfigure(i,weight=1,uniform="row")
+
+frame.grid_propagate(False)
+
+for text,row,column in btn:
+    button = ctk.CTkButton(frame,text=text,width=60,height=60,command=lambda b=None:b.configure(text="X"))
+    button.configure(command=lambda b=button:click(b))
+    button.grid(row=row,column=column)
+
+win.mainloop()
