@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                color:white;
+                border:none;
+            }
+            body {
+                background-color:black;
+            }
+            .red {
+                color:red;
+            }
+            .button1 {
+                background:red;
+                border:none;
+                border-radius:50px;
+                margin-left:250px;
+                width:150px;
+                height:50px;
+            }
+            .button2 {
+                background:blue;
+                border:none;
+                border-radius:50px;
+                margin-left:40px;
+                width:150px;
+                height:50px;
+            }
+            .custom_margin {
+                margin-top:400px;
+                margin-bottom:30px;
+                margin-left:380px;
+            }
+            .xui {
+                margin-left:350px;
+                margin-bottom:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="custom_margin">ты <span class="red">еблан</span></h1>
+        <h1 id="message" class="xui"></h1>
+        <div class="buttons">
+            <button class="button1"><h1>да</h1></button>
+            <button class="button2"><h1>нет</h1></button>
+        </div>
+        <script>
+            const message = document.getElementById("message");
+            const buttons = document.getElementById("buttons");
+
+            document.querySelector(".button1").addEventListener("click",function()
+            {
+                document.querySelector(".custom_margin").remove()
+                message.textContent = "знаем что ты еблан";
+                document.querySelector(".button1").remove();
+                document.querySelector(".button2").remove();
+            });
+
+            document.querySelector(".button2").addEventListener("click",function()
+            {
+                document.querySelector(".button2").remove();
+            });
+        </script>
+    </body>
+</html>
